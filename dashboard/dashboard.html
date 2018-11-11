@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+
+   <div class="topnav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><img src="../img/leaf.png"></a>
+            <a href="#"><img src="../img/dash.png"></a>
+            <a href="#"><img src="../img/stock.png"></a>
+            <a href="#"><img src="../img/wallet.png"></a>
+            <a href="#"><img src="../img/profile.png"></a>
+        </div>
+
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+       
+            <input type="text" placeholder="Search..">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <span class="badge badge-danger">6</span>
+            <img class="bell" src="../img/bell.png">
+  
+   </div>
+    
+    
+   
+    <div id="main">
+  <div class="headingcontainer">
+      
+        <h1 class="heading">Cryptocurrencies</h1>
+        <p>Aenean vel massa quiz mauris vehicular lacina</p>
+    </div>
+    
+    <div class="apps">
+        <a href="#"><img src="../img/icon3.png"></a>
+        <a href="#"><img src="../img/icon3.png"></a>
+        <a href="#"><img src="../img/icon3.png"></a>
+        <a href="#"><img src="../img/icon3.png"></a>
+        <a href="#"><img src="../img/icon3.png"></a>
+        <a href="#"><img src="../img/icon3.png"></a>
+     
+        
+    </div>
+    
+    
+    <div class="chartdiv">
+        
+        <div class="charts1">
+            <h3>Current Balance</h3>
+            <h4>$45 498</h4>
+            <p>UP $129</p>
+        </div>
+        <div class="chart2s">
+            <h3>Total Sale</h3>
+            <h4>$12 564</h4>
+        </div>
+        <div class="charts3">
+            <h3>Total Buy</h3>
+            <h4>$39 699</h4>
+        </div>
+        <div class="charts4">
+            <h3>BitCoin</h3>
+            <h5>BTC</h5>
+            <p>$12 345</p>
+            <h6>DOWN 4.92%</h6>
+        </div>
+        
+        
+        
+        
+        </div>
+        <div class="title">
+            <h3 class="headers1">Assets</h3>
+            <h3 class="headers2">Recent Operations</h3>
+            
+        </div>
+            
+    <section>
+        
+        <div class="assets">
+            
+            <table style="width:100%">
+                <tr>
+                    <th>Currency</th>
+                    <th class="right">Current Price</th> 
+                    <th class="center">Change</th>
+                </tr>
+                <tr>
+                    <td class="left"><img src="../img/icon3.png"> Bitcoin (BTC)</td>
+                    <td class="right">$12 345</td> 
+                    <td class="center" class="red">DOWN 4.92%</td>
+                </tr>
+                <tr>
+                    <td class="left"><img src="../img/icon3.png"> Ethereum (ETH)</td>
+                    <td class="right">$12 345</td> 
+                    <td class="center" class="green">UP 3.67%</td>
+                </tr>
+                <tr>
+                    <td class="left"><img src="../img/icon3.png"> Litecoin (LTC)</td>
+                    <td class="right">$12 345</td>
+                    <td class="center" class="green">UP 1.24%</td>
+                
+                </tr>
+            </table>
+        </div>
+   
+        <div class="recentoperations">
+            
+            <table class="noborder">
+              
+                <tr>
+                    <td><img src="../img/icon3.png"></td>  
+                    <td class="left">Bitcoin Purchased <br>
+                    May 11, 2018
+                    </td>
+                    <td class="right" class="green1">$5 430</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icon3.png"></td> 
+                    <td class="left">Transfer from Mastercard <br>
+                    May 6, 2018
+                    </td>
+                    <td class="right" class="green1">$6 800</td>
+                </tr>
+                 <tr>
+                    <td><img src="../img/icon3.png"></td> 
+                     <td class="left">Ethereum Sold
+                     <br>
+                     April 28, 2018
+                     </td>
+                     <td class="right" class="green1">$2 300</td>
+                </tr>
+                 <tr>
+                    <td><img src="../img/icon3.png"></td> 
+                     <td class="left">Litecoin Purchased
+                     <br>
+                    April 28, 2018     
+                     </td>
+                     <td class="right" class="green1">$1 800</td>
+                </tr>
+            
+            
+            </table>
+        </div>
+    </section>
+</div>
+  
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "110px";
+    document.getElementById("main").style.marginLeft = "110px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+
+     
+    
+    
+    
+    
+    
+    
+    
+
+
+</body>
+</html>

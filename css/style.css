@@ -1,0 +1,548 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+   background-color: #fcfdff;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #716fd7;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    margin-bottom: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    font-size: 12px;
+   
+  
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    padding-top: 0;
+  border-radius: 25px;
+    text-align: left;
+    
+}
+
+
+
+.container1 {
+        padding: 16px;
+    padding-top: 0;
+  border-radius: 25px;
+    text-align: center;
+}
+
+.imgcontainer h1 {
+    font-weight: 100;
+}
+
+span.psw {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    
+    
+    
+    
+}
+
+
+.psw a{
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+     background-image: linear-gradient(to bottom, rgba(169,165,234,1), rgba(115,113,215,2));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+      border-radius: 10px;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.topnav {
+    position: relative;
+    background-color: #fff;
+    border: 5px;
+  font-size: 22px;
+  padding: 5px 10px;
+    box-shadow:0px 10px rgba(169,169,169,0.1);
+    
+    
+}
+
+.topnav input {
+    width: 20%;
+    margin-left: 1%;
+}
+
+img.avatar {
+    vertical-align: middle;
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 1.5%;
+    margin-top: .5%;
+}
+
+
+
+/* -----------------------------------------
+   Badge
+----------------------------------------- */
+
+.badge{
+    padding: 3px 5px 2px;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    display: inline-block;
+    min-width: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+}
+.badge-danger {
+    background-color: #61cad7;
+}
+
+img.bell {
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5%;
+    margin-top: 0.7%;
+    float: right;
+}
+
+img.bell:hover {
+    width: 40px;
+    height: 40px;
+     margin-right: 1.5%;
+    margin-top: 0.7%;
+    float: right;
+     animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #5554b7; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+   
+    animation: blink 1s 3;
+
+}
+
+@keyframes blink {
+	0% {opacity: 0}
+	
+	100% {opacity: 1}
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav img {
+    width: 40px;
+    height: 40px;
+}
+
+#main {
+    margin: 0;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.heading{
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.headingcontainer p {
+    margin-top: 5px;
+}
+
+.apps {
+    margin: 0;
+    padding: 0;
+}
+
+.apps img {
+    width: 65px;
+    height: 60px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    overflow: none;
+    border:none;
+}
+
+.chartdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    position: relative;
+    margin-top: 30px;
+}
+
+.charts1{
+    width: 30%;
+    background-color: #d3dafc;
+    border-radius: 3%;
+    padding: 10px 25px;
+    
+}
+
+.charts1 h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.charts1 h4 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.charts1 p {
+    color:#42ce94;
+    position: absolute;
+    left:30%;
+    bottom: 78px;
+    font-weight: 400;
+    
+}
+
+
+
+.chart2s {
+    width: 10%;
+      background-color: #f6cef3;
+    border-radius: 3%;
+    padding: 10px 25px;
+}
+
+
+
+.chart2s h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.chart2s h4 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+
+
+.charts3{
+    width: 10%;
+      background-color: #a3e6d7;
+    border-radius: 3%;
+    padding: 10px 25px;
+}
+
+
+.charts3 h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.charts3 h4 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+
+.charts4 {
+    width: 20%;
+          background-color: #f7c693;
+    border-radius: 3%;
+    padding: 10px 25px;
+}
+
+.charts4 h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.charts4 h5 {
+    font-weight: 100;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+
+.charts4 p {
+    color:#000;
+    position: absolute;
+    left: 93%;
+    bottom: 80px;
+    font-weight: 400;
+}
+
+.charts4 h6 {
+    color:red;
+    position: absolute;
+    left: 93%;
+    bottom: 50px;
+    font-weight: 400;
+}
+
+.title {
+   position: relative;
+}
+
+.headers1 {
+    width:50%;
+    text-align: left;
+    position: absolute;
+        top: 26px;
+    left: 82px;
+}
+
+.headers2 {
+    width:50%;
+    text-align: left;
+    position: absolute;
+   top: 27px;
+    right: -81px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    
+}
+
+.assets {
+    width: 40%;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px 15px rgba(169,169,169,0.1);
+    font-weight: 400;
+}
+
+.recentoperations {
+    width: 40%;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-right: 5%;
+    box-shadow: 5px 5px 15px 15px rgba(169,169,169,0.1);
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+th,td {
+    border-bottom: 1px solid grey;
+}
+
+td img {
+    width: 25px;
+    
+}
+
+tr {
+    padding: 20px;
+}
+
+.left {
+    text-align: left;
+    height: 50px;
+}
+
+.right {
+    text-align: right;
+    height: 50px;
+}
+
+.center {
+    text-align: center;
+    height: 50px;
+    
+}
+
+.green {
+    color:#42ce94;
+    text-align: center;
+}
+
+.green1 {
+    text-align: right;
+    color:#42ce94;
+}
+
+.red {
+    color: red;
+    text-align: center;
+}
+
+.noborder {
+    border:none;
+}
+
+.headers {
+    width: 10%;
+}
